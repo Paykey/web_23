@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>계절 선택</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+        margin-top: 50px; 
+      }
+
+      .season_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px; 
+      }
+
+      .season_buttons > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        margin-bottom: 20px; 
+      }
+
+      .season_img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        order: -1;
+      }
+
+      .credit {
+        margin-top: 50px;
+        font-size: 12px;
+        color: #999;
+      }
+
+      button {
+        padding: 10px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #363636;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: transform 0.3s ease; 
+      }
+
+      button:hover {
+        transform: scale(1.1); 
+        background-color: #acacac;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>계절의 변화</h1>
+
+    <p style="text-align: center; margin-top: 30px; margin-bottom: 80px">
+      계절에는 뚜렷한 변화가 나타납니다. 계절에 따른 변화를 알아보세요.
+    </p>
+
+    <div style="text-align: center; margin-bottom: 80px">
+      <audio controls>
+        <source src="music\Seasons_Song.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <div class="season_buttons">
+      <div>
+        <img class="season_img" src="pic/spring.png" alt="봄 아이콘" />
+        <button id="spring_button">봄</button>
+      </div>
+
+      <div>
+        <img class="season_img" src="pic/summer.png" alt="여름 아이콘" />
+        <button id="summer_button">여름</button>
+      </div>
+
+      <div>
+        <img class="season_img" src="pic\autumn.png" alt="가을 아이콘" />
+        <button id="autumn_button">가을</button>
+      </div>
+
+      <div>
+        <img class="season_img" src="pic/winter.png" alt="겨울 아이콘 " />
+        <button id="winter_button">겨울</button>
+      </div>
+    </div>
+
+    <div class="credit">
+      Icons by Icons8</a>
+    </div>
+
+
+    <script>
+      const spring_b = document.getElementById("spring_button");
+      const summer_b = document.getElementById("summer_button");
+      const autumn_b = document.getElementById("autumn_button");
+      const winter_b = document.getElementById("winter_button");
+
+      spring_b.addEventListener("click", function () {
+        window.location.href = "season/spring_page.html"; 
+      });
+
+      summer_b.addEventListener("click", function () {
+        window.location.href = "season/summer_page.html"; 
+      });
+
+      autumn_b.addEventListener("click", function () {
+        window.location.href = "season/autumn_page.html";
+      });
+
+      winter_b.addEventListener("click", function () {
+        window.location.href = "season/winter_page.html"; 
+      });
+    </script>
+  </body>
+</html>

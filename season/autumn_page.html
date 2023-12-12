@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>가을 페이지</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .season_image {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 20px;
+      }
+
+      .video_container {
+        position: relative;
+        width: 80%;
+        height: 45%;
+        max-width: 800px;
+        max-height: calc(80vw * 9 / 16);
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+
+      .video_container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .text {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="season_image" src="../pic/autumn.png" alt="가을 아이콘" />
+    <h1>가을에 일어나는 변화</h1>
+    <p>가을에는 식물의 잎이 붉은색, 노란색으로 변화하며 풍경이 화려해집니다.</p>
+    <div class="video_container">
+      <iframe
+        src="https://www.youtube.com/embed/toi8G3s6l8Q"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p>
+      <a
+        href="https://terms.naver.com/entry.naver?docId=1055140&cid=40942&categoryId=32286"
+        >가을에 대한 설명(네이버 지식백과)</a
+      >
+    </p>
+    <div class="text">
+      <ul>
+        <li>기상학적으로 양력 9~11월을 의미한다.</li>
+        <li>
+          기온이 여름에 비해 쌀쌀해지기 시작하며, 식물의 잎들이 노랗게 변하거나
+          붉게 변한다.
+        </li>
+        <li>
+          옷차림이 여름에 비해 길어지고 두꺼워지며, 봄의 옷차림과 유사해진다.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
